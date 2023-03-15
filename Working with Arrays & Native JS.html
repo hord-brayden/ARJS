@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Working with Arrays & Native JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">JS Assignment - Arrays, Sorting, & Paired programming </h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active d-none" href="#">Home</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover pt-5">
+        <h1 class="cover-heading">Native JS</h1>
+        <p class="lead">Try your skill at working with some Javascript.</p>
+        <p class="lead">Reference the native function by calling:
+          <div class="code-contain py-3">
+           <code class="m-auto my-3 sm-code">rando(x)</code>
+          </div>
+          with x being any positive integer.</br>
+          See what it returns.</p>
+        <p class="lead">
+          <a href="#" class="">
+            <button class="btn btn-lg btn-warning" onclick="document.getElementById('output').innerHTML = rando(Math.floor(Math.random() * 20));">Run a sample test</button>
+          </a>
+        </p>
+        
+        <p class="lead">
+          <div class="code-contain py-3">
+           <code class="m-auto" id="output"></code>
+          </div>
+        </p>
+      
+      </main>
+
+      <div class="card-deck pb-3 text-center">
+        <div class="my-5">
+          <h1 class="cover-heading m-auto">Building Tests</h1>
+          <p class="lead">It's important to build out tests to handle errors, check statements and prove your application.</p>
+          <p class="lead">Here are some examples of what you should build.</p>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-2 font-weight-normal">Test True</h4>
+            <span class="small py-3">This function runs a string that <em>is sorted</em> through the orderedLetters() function and checks to see if it's in alphabetical order.</span>
+          </div>
+          <div class="card-body">
+            <code>orderedletters('abcdefgh');</code>
+            <div class="mt-3 mb-4">
+              
+            </div>
+            <button type="button" onclick="orderedletters('abcdefgh');" class="btn btn-lg btn-block btn-outline-primary">Return True</button>
+          </div>
+        </div>
+
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-2 font-weight-normal">Test False</h4>
+            <span class="small py-3">This function runs a string that is <em>not sorted</em> through the orderedLetters() function and checks to see if it's in alphabetical order.</span>
+          </div>
+          <div class="card-body">
+            <code>orderedletters('hgfedcba');</code>
+            <div class="mt-3 mb-4">
+              
+            </div>
+            <button onclick="orderedletters('hgfedcba');" type="button" class="btn btn-lg btn-block btn-primary">Return False</button>
+            
+          </div>
+        </div>
+      </div>
+
+        <div class="starter-template container">
+          <div class="row">
+            <div class="col-md-12">
+          <h1>Your Assignments:</h1>
+          <h4 class="py-3">(Using only Javascript)</h4>
+          <ul class="text-left">
+          <li><p class="lead">Build a function that accepts the <code class="d-inline">rando()</code> function, and filter the output.</p></li>
+          <li><p class="lead"><em>Pick one:</em> Strip out all numbers; Strip out all letters; Strip out all Capital letters; Strip out all special characters.</p></li>
+          <br>
+          <h2 class="lead"><em>Then:</em></h2>
+          <li><p class="lead">Assign each character of the string to be an item in an array.</p></li>
+          <li><p class="lead"><code class="d-inline">Return</code>  your completed array via your function, and test results out of your function for another team member to work on.</p></li>
+          <br>
+          <h2 class="lead"><em>Then:</em></h2>
+          <li><p class="lead">You will accept another team members function, join the array into a string, and sort the remaining string, numerically, alphabetically, or by character code.</p></li>
+          <li><p class="lead"><code class="d-inline">console.log()</code>  out the string.</p></li>
+
+
+
+        </ul>
+        </div>
+          </div>
+        </div>
+  
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <canvas id="c"></canvas>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <script src="Rando-Generator.js"></script>
+    <script></script>
+  </body>
+</html>

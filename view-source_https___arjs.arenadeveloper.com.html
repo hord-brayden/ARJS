@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V7V7SXZK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W3V7V7SXZK');
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+
+    <a-marker preset='kanji'>
+      <a-entity
+            position="0 0 1"
+            scale="0.005 0.005 0.005"
+            gltf-model="https://arjs.arenadeveloper.com/corona/scene.gltf"
+            ></a-entity>
+    </a-marker>
+
+    <!-- Hiro Marker -->
+    <a-marker preset='hiro'>
+    
+    <!-- Arena Marker -->
+    <!--
+    <a-marker-camera type='pattern' patternUrl='https://arjs.arenadeveloper.com/patterns/pattern-arena512.patt'> 
+      <a-entity
+            position="0 0 1"
+            scale="0.05 0.05 0.05"
+            gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+            ></a-entity>
+    </a-marker-camera> -->
+
+    <!-- Hammer & Sickle --> 
+    <!-- marker camera -->
+    <!-- <a-marker preset='custom' type='pattern' patternUrl='/patterns/pattern-hammer_sickle_boi.patt'> -->
+
+
+            <!-- election states -->
+             <!-- 
+            <a-entity
+            position="0 0 1"
+            scale="1 1 1"
+            gltf-model="https://arjs.arenadeveloper.com/election/scene.gltf"
+            ></a-entity> 
+
+             -->
+            
+
+            <!-- rubles -->
+            
+            <a-entity
+            position="0 0 0"
+            scale="0.004 0.004 0.004"
+            gltf-model="https://arjs.arenadeveloper.com/rubles/scene.gltf"
+            ></a-entity>
+            
+    
+            <!--
+            <a-entity
+            position="0 0 0"
+            scale="10 10 10"
+            gltf-model="https://arjs.arenadeveloper.com/money_case/scene.gltf"
+            ></a-entity>
+            -->
+
+        <!-- Buster Drone -->
+      <!-- <a-entity
+      id="drone"
+      position="0 0 0"
+      scale="1 1 1"
+      gltf-model-next="src: url(busterDrone.gltf);"
+      animation-mixer>
+            </a-entity>-->
+      
+      <!-- Trex -->
+      <!-- 
+      <a-entity
+            position="0 0 1"
+            scale="0.05 0.05 0.05"
+            gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+            ></a-entity>  -->
+
+       <!-- Face scans -->
+      <!--
+        <a-entity
+            obj-model=”obj: url(https://arjs.arenadeveloper.com/source/face.obj); 
+            mtl: url(https://arjs.arenadeveloper.com/source/face.mtl)”>
+        </a-entity> -->
+      <!--
+        <a-entity
+            position="-2 -1 0"
+            scale="2 2 2"
+            gltf-model="https://arjs.arenadeveloper.com/facescan/scene.gltf"
+            ></a-entity>
+      --> 
+      <!-- SF City -->
+      <!-- 
+      <a-entity 
+      position="-2 -1 0"
+            scale=".05 .05 .05"
+        gltf-model=”url(https://arjs.arenadeveloper.com/san_francisco_city/scene.gltf)"></a-entity>
+
+      -->
+
+     </a-marker>
+    
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
